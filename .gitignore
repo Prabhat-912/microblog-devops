@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environments
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Kubernetes
+*.swp
+
+# Helm
+charts/
+
+# Secrets
+*.pem
+*.key
+
+# Grafana
+grafana.db
