@@ -23,8 +23,15 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ghcr.io/prabhat-912/microblog-devops:latest .
+          docker build \
+            -t ghcr.io/prabhat-912/microblog-devops:latest \
+            -t ghcr.io/prabhat-912/microblog-devops:${{ github.sha }} \
+            .
 
-      - name: Push Docker Image
+      - name: Push Latest Image
         run: |
           docker push ghcr.io/prabhat-912/microblog-devops:latest
+
+      - name: Push Commit SHA Image
+        run: |
+          docker push ghcr.io/prabhat-912/microblog-devops:${{ github.sha }}
