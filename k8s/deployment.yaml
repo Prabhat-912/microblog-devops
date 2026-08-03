@@ -19,8 +19,8 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: microblog-app:latest
-          imagePullPolicy: Never
+          image: ghcr.io/prabhat-912/microblog-devops:latest
+          imagePullPolicy: Always
 
           ports:
             - containerPort: 5000
