@@ -27,3 +27,4 @@ charts/
 
 # Grafana
 grafana.db
+argocd
