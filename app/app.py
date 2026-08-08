@@ -29,7 +29,7 @@ def home():
     visits = redis_client.get("homepage_visits")
 
     return jsonify({
-        "message": "Microblog DevOps Platform",
+        "message": "Microblog DevOps Platform V2-updated",
         "visits": int(visits)
     })
 
