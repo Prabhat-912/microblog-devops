@@ -28,3 +28,4 @@ charts/
 # Grafana
 grafana.db
 argocd
+argocd-cli
